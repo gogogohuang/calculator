@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import App from 'components/App/App';
+import { wrapper } from 'root/store';
 
 const Index = () => {
   return (
@@ -14,4 +15,4 @@ const Index = () => {
   );
 }
 
-export default Index
+export default wrapper.withRedux(Index);

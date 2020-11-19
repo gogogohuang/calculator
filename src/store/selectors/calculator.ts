@@ -1,0 +1,1 @@
+export const calculatorValue = state => state.calculator && state.calculator.value;
