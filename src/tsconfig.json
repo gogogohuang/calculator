@@ -26,5 +26,5 @@
     }
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "server/server.js", "styles/reset.style.ts"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "server/server.js", "styles/reset.style.ts", "redux/store.js"]
 }
