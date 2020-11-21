@@ -49,3 +49,34 @@ yarn start
 ```sh
 yarn tslint
 ```
+
+# Assignment
+## Evaluation
+### Time Tracking
+* Project init - 2hrs
+* Layout - 2hrs
+* useDrag - 1hr
+* useClickOutside - 1hr
+* redux - 3hrs
+
+### Done
+* Layout
+* Add/Minus/Multiply/Division/signal switch/AC
+
+### Todo 
+* Trans to percent data
+* A bug in useClickOutside. 
+
+## Project Structure 
+
+
+### Layout Component
+
+
+### Redux
+
+### ui
+* calculator status
+
+### calculator
+* arithmetic function
