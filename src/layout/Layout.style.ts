@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css';
-import { backgroundColor } from 'styles/vars';
+import { backgroundColor, screenPad } from 'styles/vars';
 
 export default css`
   .container {
@@ -12,6 +12,10 @@ export default css`
       margin: 0 auto;
       width: 90%;
       min-height: 100%;
+
+      @media screen and (max-width: ${screenPad -1}px) {
+        width: 100%;
+      }
     }
   }
 `;
