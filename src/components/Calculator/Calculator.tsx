@@ -8,10 +8,9 @@ import styles from './Calculator.styles';
 type Props = {
   clickCb: () => void;
   calculatorIsOpen: boolean;
-  status: any;
 }
 
-const Calculate = ({ clickCb, calculatorIsOpen, status }: Props) => {
+const Calculate = ({ clickCb, calculatorIsOpen }: Props) => {
   if (!calculatorIsOpen) {
     return null;
   }
@@ -19,8 +18,6 @@ const Calculate = ({ clickCb, calculatorIsOpen, status }: Props) => {
   const draggableDivRef = useRef(null);
   useClickOutSide([draggableDivRef], () => clickCb());
   useDrag(draggableDivRef);
-
-  console.log(status);
 
   return (
     <div ref={draggableDivRef} className="calculator-wrapper" >
