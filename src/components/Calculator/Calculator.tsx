@@ -1,4 +1,4 @@
-import React, { useRef, RefObject } from 'react';
+import React, { useRef } from 'react';
 import Display from './Display/DisplayContainer';
 import ButtonPanel from './ButtonPanel/ButtonPanel';
 import useDrag from 'hooks/useDrag'

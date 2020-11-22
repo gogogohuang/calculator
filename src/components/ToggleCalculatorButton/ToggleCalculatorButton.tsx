@@ -1,12 +1,11 @@
-import React, { RefObject } from 'react';
+import React from 'react';
 import styles from './ToggleCalculatorButton.styles';
 
 type Props = {
-  ref: RefObject<any>;
   clickCb: (param?: any) => void;
 }
 
-const ToggleCalculatorButton = ({ ref, clickCb }: Props) => {
+const ToggleCalculatorButton = ({ clickCb }: Props) => {
   const handleClick = e => {
     e.preventDefault();
     e.stopPropagation();
@@ -14,7 +13,7 @@ const ToggleCalculatorButton = ({ ref, clickCb }: Props) => {
   }
 
   return (
-    <button ref={ref} type="button" onClick={handleClick}>
+    <button type="button" onClick={handleClick}>
       Open Calculator
       <style jsx>{styles}</style>
     </button>
