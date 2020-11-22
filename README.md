@@ -27,7 +27,7 @@
 
 
 # Note
-* make sure node version > 10
+* make sure node version is over than 10
 * this project is built up with nextjs/typescript/hook
 
 # Command
@@ -39,7 +39,7 @@ yarn install
 yarn dev
 ```
 
-## build files
+## build files and run it as production
 ```sh
 yarn build
 yarn start
@@ -65,15 +65,11 @@ yarn tslint
 
 ### Todo 
 * Trans to percent data
-* A bug in useClickOutside. 
+* Save last position in desktop-mode
 
 ## Project Structure 
 
-
-### Layout Component
-
-
-### Redux
+### Redux Store
 
 ### ui
 * calculator status
