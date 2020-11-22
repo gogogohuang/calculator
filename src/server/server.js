@@ -15,7 +15,7 @@ app.prepare().then(() => {
   server.use(compression({ threshold: 0 }));
   server.use(routerHandler);
 
-  server.listen(port, null, (err) => {
+  server.listen(process.env.PORT || 5000, null, (err) => {
     if (err) {
       return console.error(err.message);
     }
