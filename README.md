@@ -51,6 +51,10 @@ yarn tslint
 ```
 
 # Assignment
+
+## Online Test
+* https://jinze-calculator.herokuapp.com/
+
 ## Evaluation
 
 ### Estimated
