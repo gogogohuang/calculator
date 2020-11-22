@@ -13,14 +13,15 @@ export default css`
     @media screen and (max-width: ${vars.screenPad}px) {
       width: ${vars.calculatorWidthM}px;
     }
+  }
 
-    @media screen and (max-width: ${vars.screenPad - 1}px) {
-      position: fixed;
-      top: 50%;
-      width: 100vw;
-      height: 50vh;
-      overflow-x:hidden;
-      overflow-y:auto; 
-    }
+  .calculator-wrapper-mobile {
+    position: fixed;
+    top: 50%;
+    width: 100vw;
+    height: 50vh;
+    overflow-x:hidden;
+    overflow-y:auto; 
+    background: linear-gradient(${vars.panelBackgroundColorTop}, ${vars.panelBackgroundColorBottom});
   }
 `;

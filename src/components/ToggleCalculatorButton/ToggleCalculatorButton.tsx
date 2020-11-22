@@ -7,13 +7,12 @@ type Props = {
 
 const ToggleCalculatorButton = ({ clickCb }: Props) => {
   const handleClick = e => {
-    e.preventDefault();
     e.stopPropagation();
     clickCb();
   }
 
   return (
-    <button type="button" onClick={handleClick}>
+    <button type="button" onClickCapture={handleClick}>
       Open Calculator
       <style jsx>{styles}</style>
     </button>

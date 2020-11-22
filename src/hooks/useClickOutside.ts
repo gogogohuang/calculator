@@ -5,8 +5,6 @@ const useClickOutside = (refs: RefObject<any>[], handler: () => void) => {
     () => {
       const listener = e => {
         let isOutSide = true;
-        e.preventDefault();
-        e.stopPropagation();
         refs.some(({ current }) => {
           if (!current || current.contains(e.target)) {
             isOutSide = false;

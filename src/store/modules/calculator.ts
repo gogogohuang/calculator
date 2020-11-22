@@ -177,7 +177,7 @@ const computationFunc = (first: string, second: string, action: ActionTypes): st
         return '0';
       }
 
-      return formatFloat((+first / +second), fractionDigits).toString();
+      return (+first / +second).toString();
     }
   }
 }
