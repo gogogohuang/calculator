@@ -1,5 +1,6 @@
 import React, { CSSProperties } from 'react';
-import styles from './ArithmeticButton.styles';
+import { basicBtnStyles as styles } from '../../ButtonPanel.styles';
+
 
 type Props = {
   clickCb: () => void;
@@ -17,7 +18,7 @@ const ArithmeticButton = ({ clickCb, displayOpString, style }: Props) => {
       style={{ ...style }}
       type="button"
       onClick={handleClick}
-      className="compute-btn-wrapper">
+      className="btn-wrapper">
       {displayOpString}
       <style jsx>{styles}</style>
     </button>

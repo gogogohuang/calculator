@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import styles from './NumberButton.styles';
+import { basicBtnStyles as styles } from '../../ButtonPanel.styles';
 
 type Props = {
   displayNumber: string;
@@ -15,8 +15,7 @@ const NumberButton = ({ displayNumber, clickNumBtn }: Props) => {
   return (
     <button
       type='button'
-      className={cx("number-btn-wrapper",
-        { 'number-btn-wrapper__zero': displayNumber === '0' })}
+      className={cx("btn-wrapper", { 'btn-wrapper__zero': displayNumber === '0' })}
       onClick={handleClick}>
       {displayNumber}
       <style jsx>{styles}</style>
