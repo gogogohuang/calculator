@@ -61,14 +61,14 @@ yarn tslint
 * Project init - 1hrs
 * Layout - 2hrs
 * useDrag - 1hr
-* useClickOutside - 1hr
+* useClickOutside/useMobileDevice - 1hr
 * redux - 2hrs
 
 ### Time Tracking
 * Project init - 2hrs (next-redux)
 * Layout - 2hrs
 * useDrag - 1hr
-* useClickOutside - 1hr
+* useClickOutside/useMobileDevice - 1hr
 * redux - 3hrs (calculator logic is much more complicated)
 
 ### Done
