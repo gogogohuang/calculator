@@ -52,12 +52,20 @@ yarn tslint
 
 # Assignment
 ## Evaluation
-### Time Tracking
-* Project init - 2hrs
+
+### Estimated
+* Project init - 1hrs
 * Layout - 2hrs
 * useDrag - 1hr
 * useClickOutside - 1hr
-* redux - 3hrs
+* redux - 2hrs
+
+### Time Tracking
+* Project init - 2hrs (next-redux)
+* Layout - 2hrs
+* useDrag - 1hr
+* useClickOutside - 1hr
+* redux - 3hrs (calculator logic is much more complicated)
 
 ### Done
 * Layout
@@ -66,11 +74,28 @@ yarn tslint
 ### Todo 
 * Trans to percent data
 * Save last position in desktop-mode
+* Unit Test
 
 ## Project Structure 
 
-### Redux Store
+### NextJs  
+* reference: [NextJs](https://nextjs.org/)
+* Page - route entry
+* Layout - Common layout if need, like as dashboard.
+* App - Main component entry
 
+## define
+* typescript definition
+* plz follow namespace rule
+```typescript
+namespace xx { }
+```
+
+## styles 
+* reset styles
+* all custom style
+
+### Redux Store
 ### ui
 * calculator status
 
