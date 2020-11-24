@@ -13,6 +13,6 @@ const Index = () => {
       <App />
     </>
   );
-}
+};
 
 export default wrapper.withRedux(Index);

@@ -16,7 +16,7 @@ export default function reducer(state = initialState, action: Redux.Action<Actio
       return {
         ...state,
         calculatorIsOpen: !state.calculatorIsOpen,
-      }
+      };
     }
 
     default:
@@ -28,5 +28,4 @@ export const toggleCalculator = () => {
   return {
     type: ActionTypes.TOGGLE_CALCULATOR,
   };
-}
-
+};

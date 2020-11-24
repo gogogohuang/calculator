@@ -25,7 +25,6 @@ const initialState: CalculatorProps = {
   computation: null,
 };
 
-
 export default function reducer(state = initialState, action: Redux.Action<ActionTypes>) {
   switch (action.type) {
     case ActionTypes.NUMBER_BTN: {
@@ -33,7 +32,7 @@ export default function reducer(state = initialState, action: Redux.Action<Actio
       const { nextValue } = state;
 
       if (payload === '0' && nextValue === '0') {
-        return { ...state }
+        return { ...state };
       }
 
       const _next = !nextValue || nextValue === '0' ? payload : nextValue + payload;
@@ -53,7 +52,7 @@ export default function reducer(state = initialState, action: Redux.Action<Actio
       }
 
       if (!resultValue) {
-        return { ...state, computation: type, resultValue: nextValue, nextValue: null, };
+        return { ...state, computation: type, resultValue: nextValue, nextValue: null };
       }
 
       const total = computationFunc(resultValue, nextValue, computation);
@@ -63,7 +62,7 @@ export default function reducer(state = initialState, action: Redux.Action<Actio
         computation: type,
         nextValue: null,
         resultValue: total,
-      }
+      };
     }
 
     case ActionTypes.EQUAL_BTN: {
@@ -76,7 +75,7 @@ export default function reducer(state = initialState, action: Redux.Action<Actio
         preValue,
         nextValue: null,
         resultValue: total,
-      }
+      };
     }
 
     case ActionTypes.AC_BTN: {
@@ -85,21 +84,21 @@ export default function reducer(state = initialState, action: Redux.Action<Actio
         preValue: null,
         nextValue: null,
         resultValue: null,
-      }
+      };
     }
 
     case ActionTypes.SIG_BTN: {
       const { nextValue, resultValue, preValue } = state;
-      const _nextValue = nextValue? (-1 * +nextValue).toString(): null;
-      const _preValue = preValue? (-1 * +preValue).toString(): null;
-      const _resultValue = resultValue? (-1 * +resultValue).toString(): null;
+      const _nextValue = nextValue ? (-1 * +nextValue).toString() : null;
+      const _preValue = preValue ? (-1 * +preValue).toString() : null;
+      const _resultValue = resultValue ? (-1 * +resultValue).toString() : null;
 
       return {
         ...state,
         nextValue: _nextValue,
         resultValue: _resultValue,
         preValue: _preValue,
-      }
+      };
     }
 
     default:
@@ -112,64 +111,64 @@ export const clickNumBtn = (payload: string) => {
     type: ActionTypes.NUMBER_BTN,
     payload,
   };
-}
+};
 
 export const clickPluBtn = () => {
   return {
     type: ActionTypes.ADD_BTN,
   };
-}
+};
 
 export const clickMinusBtn = () => {
   return {
     type: ActionTypes.MINUS_BTN,
   };
-}
+};
 
 export const clickEqualBtn = () => {
   return {
     type: ActionTypes.EQUAL_BTN,
   };
-}
+};
 
 export const clickAcBtn = () => {
   return {
     type: ActionTypes.AC_BTN,
-  }
-}
+  };
+};
 
 export const clickMultiplyBtn = () => {
   return {
     type: ActionTypes.MULTIPLY_BTN,
-  }
-}
+  };
+};
 
 export const clickDivideBtn = () => {
   return {
     type: ActionTypes.DIVIDE_BTN,
-  }
-}
+  };
+};
 
 export const clickSigBtn = () => {
   return {
     type: ActionTypes.SIG_BTN,
-  }
-}
+  };
+};
 
 const computationFunc = (first: string, second: string, action: ActionTypes): string => {
-  const fractionDigits = getFractionDigits(first) >= getFractionDigits(second) ?
-    getFractionDigits(first) : getFractionDigits(second)
+  const fractionDigits =
+    getFractionDigits(first) >= getFractionDigits(second) ? getFractionDigits(first) : getFractionDigits(second);
 
   switch (action) {
     case ActionTypes.ADD_BTN: {
-      return formatFloat((+first + +second), fractionDigits).toString();
+      return formatFloat(+first + +second, fractionDigits).toString();
     }
     case ActionTypes.MINUS_BTN: {
-      return formatFloat((+first - +second), fractionDigits).toString();
+      return formatFloat(+first - +second, fractionDigits).toString();
     }
 
     case ActionTypes.MULTIPLY_BTN: {
-      return formatFloat((+first * +second), fractionDigits).toString();
+      return formatFloat(+first * +second, fractionDigits).toString();
     }
 
     case ActionTypes.DIVIDE_BTN: {
@@ -180,4 +179,4 @@ const computationFunc = (first: string, second: string, action: ActionTypes): st
       return (+first / +second).toString();
     }
   }
-}
+};

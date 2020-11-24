@@ -15,13 +15,12 @@ const Drag = (ref: MutableRefObject<any>) => {
     let initialX: number;
     let initialY: number;
 
-
     const onMousedown = e => {
       initialX = e.clientX - offsetX;
       initialY = e.clientY - offsetY;
       window.addEventListener('mousemove', onMouseMove);
       window.addEventListener('mouseup', onMouseUp);
-    }
+    };
 
     const onMouseMove = e => {
       currentX = e.clientX - initialX;
@@ -29,14 +28,14 @@ const Drag = (ref: MutableRefObject<any>) => {
       offsetX = currentX;
       offsetY = currentY;
       target.style.transform = `translate(${currentX}px, ${currentY}px)`;
-    }
+    };
 
     const onMouseUp = () => {
       initialX = currentX;
       initialY = currentY;
       window.removeEventListener('mousemove', onMouseMove);
       window.addEventListener('mouseup', onMouseUp);
-    }
+    };
 
     target.addEventListener('mousedown', onMousedown);
 
@@ -46,6 +45,6 @@ const Drag = (ref: MutableRefObject<any>) => {
       window.removeEventListener('mousemove', onMouseMove);
     };
   }, [ref]);
-}
+};
 
 export default Drag;

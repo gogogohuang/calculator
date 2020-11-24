@@ -22,4 +22,3 @@ export const calculatorWidthL = 480;
 export const calculatorWidthM = 360;
 export const buttonSizeL = (calculatorWidthL - 50) / 4;
 export const buttonSizeM = (calculatorWidthM - 50) / 4;
-

@@ -8,6 +8,6 @@ const Layout: FC = ({ children }) => {
       <style jsx>{styles}</style>
     </div>
   );
-}
+};
 
 export default Layout;

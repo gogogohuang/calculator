@@ -12,6 +12,6 @@ const App = () => {
       <Calculator isMobile={isMobile} />
     </>
   );
-}
+};
 
 export default App;

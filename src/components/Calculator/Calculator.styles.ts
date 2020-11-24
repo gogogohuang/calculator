@@ -20,8 +20,8 @@ export default css`
     top: 50%;
     width: 100vw;
     height: 50vh;
-    overflow-x:hidden;
-    overflow-y:auto; 
+    overflow-x: hidden;
+    overflow-y: auto;
     background: linear-gradient(${vars.panelBackgroundColorTop}, ${vars.panelBackgroundColorBottom});
   }
 `;

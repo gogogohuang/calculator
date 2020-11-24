@@ -33,7 +33,7 @@ export const basicBtnStyles = css`
       width: ${vars.buttonSizeL * 2 + 10}px;
       border-radius: ${vars.buttonSizeL / 2}px;
       text-align: left;
-      padding-left:  ${vars.buttonSizeL / 4}px;;
+      padding-left: ${vars.buttonSizeL / 4}px;
     }
 
     @media screen and (max-width: ${vars.screenPad}px) {
@@ -43,7 +43,7 @@ export const basicBtnStyles = css`
       &__zero {
         width: ${vars.buttonSizeM * 2 + 10}px;
         border-radius: ${vars.buttonSizeM / 2}px;
-        padding-left:  ${vars.buttonSizeM / 4}px;;
+        padding-left: ${vars.buttonSizeM / 4}px;
       }
     }
   }

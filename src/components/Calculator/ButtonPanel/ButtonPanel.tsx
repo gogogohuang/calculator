@@ -13,35 +13,42 @@ import { computeButtonColor2, buttonFontColor } from 'styles/vars';
 
 const ButtonPanel = () => {
   return (
-    <div className='button-panel-wrapper'>
+    <div className="button-panel-wrapper">
       <div className="button-panel-wrapper__row">
-        <ACButton displayOpString='AC' style={{ backgroundColor: computeButtonColor2, color: buttonFontColor }} />
-        <SigSwitchButton displayOpString='+/-' style={{ backgroundColor: computeButtonColor2, color: buttonFontColor }} />
-        <ArithmeticButton displayOpString='%' clickCb={() => { }} style={{ backgroundColor: computeButtonColor2, color: buttonFontColor }} />
-        <DivideButton displayOpString='/' />
+        <ACButton displayOpString="AC" style={{ backgroundColor: computeButtonColor2, color: buttonFontColor }} />
+        <SigSwitchButton
+          displayOpString="+/-"
+          style={{ backgroundColor: computeButtonColor2, color: buttonFontColor }}
+        />
+        <ArithmeticButton
+          displayOpString="%"
+          clickCb={() => {}}
+          style={{ backgroundColor: computeButtonColor2, color: buttonFontColor }}
+        />
+        <DivideButton displayOpString="/" />
       </div>
       <div className="button-panel-wrapper__row">
-        <NumberButton displayNumber='7' />
-        <NumberButton displayNumber='8' />
-        <NumberButton displayNumber='9' />
-        <MultiplyButton displayOpString='x' />
+        <NumberButton displayNumber="7" />
+        <NumberButton displayNumber="8" />
+        <NumberButton displayNumber="9" />
+        <MultiplyButton displayOpString="x" />
       </div>
       <div className="button-panel-wrapper__row">
-        <NumberButton displayNumber='4' />
-        <NumberButton displayNumber='5' />
-        <NumberButton displayNumber='6' />
-        <MinusButton displayOpString='-' />
+        <NumberButton displayNumber="4" />
+        <NumberButton displayNumber="5" />
+        <NumberButton displayNumber="6" />
+        <MinusButton displayOpString="-" />
       </div>
       <div className="button-panel-wrapper__row">
-        <NumberButton displayNumber='1' />
-        <NumberButton displayNumber='2' />
-        <NumberButton displayNumber='3' />
-        <PlusButton displayOpString='+' />
+        <NumberButton displayNumber="1" />
+        <NumberButton displayNumber="2" />
+        <NumberButton displayNumber="3" />
+        <PlusButton displayOpString="+" />
       </div>
       <div className="button-panel-wrapper__row">
-        <NumberButton displayNumber='0' />
-        <NumberButton displayNumber='.' />
-        <EqualButton displayOpString='=' />
+        <NumberButton displayNumber="0" />
+        <NumberButton displayNumber="." />
+        <EqualButton displayOpString="=" />
       </div>
       <style jsx>{styles}</style>
     </div>

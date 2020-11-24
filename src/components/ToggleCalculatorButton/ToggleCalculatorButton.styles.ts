@@ -7,6 +7,6 @@ export default css`
     border-radius: 5px;
     width: 200px;
     height: 100px;
-    font-size: 24px; 
+    font-size: 24px;
   }
 `;

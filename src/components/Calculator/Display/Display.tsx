@@ -13,6 +13,6 @@ const Result = ({ resultValue, nextValue }: Props) => {
       <style jsx>{styles}</style>
     </div>
   );
-}
+};
 
 export default Result;

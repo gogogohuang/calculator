@@ -3,13 +3,13 @@ import styles from './ToggleCalculatorButton.styles';
 
 type Props = {
   clickCb: (param?: any) => void;
-}
+};
 
 const ToggleCalculatorButton = ({ clickCb }: Props) => {
   const handleClick = e => {
     e.stopPropagation();
     clickCb();
-  }
+  };
 
   return (
     <button type="button" onClickCapture={handleClick}>
@@ -17,6 +17,6 @@ const ToggleCalculatorButton = ({ clickCb }: Props) => {
       <style jsx>{styles}</style>
     </button>
   );
-}
+};
 
 export default ToggleCalculatorButton;

@@ -5,5 +5,5 @@ import ui from './ui';
 
 export default combineReducers({
   calculator,
-  ui
+  ui,
 });
